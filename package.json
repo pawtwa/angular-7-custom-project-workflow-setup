@@ -7,5 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Paweł Twardziak",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^7.2.9",
+    "@angular/compiler": "^7.2.9",
+    "@angular/compiler-cli": "^7.2.9",
+    "@angular/core": "^7.2.9",
+    "@angular/forms": "^7.2.9",
+    "@angular/http": "^7.2.9",
+    "@angular/platform-browser": "^7.2.9",
+    "@angular/platform-browser-dynamic": "^7.2.9",
+    "@angular/platform-server": "^7.2.9",
+    "@angular/router": "^7.2.9",
+    "@angular/upgrade": "^7.2.9",
+    "core.js": "^0.4.2",
+    "rxjs": "^6.4.0",
+    "zone.js": "^0.8.29"
+  }
 }
