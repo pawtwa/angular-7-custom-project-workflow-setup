@@ -1,0 +1,11 @@
+{
+  "name": "custom-project-workflow-setup",
+  "version": "1.0.0",
+  "description": "An Angular Speed Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paweł Twardziak",
+  "license": "ISC"
+}
