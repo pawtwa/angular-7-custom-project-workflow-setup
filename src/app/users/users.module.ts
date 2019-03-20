@@ -11,9 +11,7 @@ import { CommonModule } from "@angular/common";
         CommonModule,
         UsersRoutingModule
     ],
-    exports: [
-        UsersRoutingModule
-    ],
+    exports: [],
     providers: [
 
     ]

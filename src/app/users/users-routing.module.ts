@@ -11,7 +11,6 @@ const usersRouting: Routes = [
 
 @NgModule({
     declarations: [
-        UsersComponent
     ],
     imports: [
         RouterModule.forChild(usersRouting)

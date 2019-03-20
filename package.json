@@ -1,10 +1,14 @@
 {
   "name": "custom-project-workflow-setup",
   "version": "1.0.0",
-  "description": "An Angular Speed Project",
+  "description": "An Angular Seed Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack-dev-server --inline --progress --port 8080 --config webpack.config.dev.js",
+    "build:prod": "del-cli dist && ngc -p tsconfig.aot.json && ngc -p tsconfig.aot.json && webpack --config webpack.config.prod.js --progress --profile --bail",
+    "build:prod:after": "del-cli src/app/**/*.js src/app/**/*.ngfactory.ts src/app/**/*.js.map src/app/**/*.shim.ts src/app/**/*.ngsummary.json src/app/**/*.ngstyle.ts dist/app ./src/polyfills.ngsummary.json",
+    "serve": "lite-server"
   },
   "author": "Paweł Twardziak",
   "license": "ISC",
@@ -21,18 +25,23 @@
     "@angular/platform-server": "^7.2.9",
     "@angular/router": "^7.2.9",
     "@angular/upgrade": "^7.2.9",
-    "core.js": "^0.4.2",
+    "core-js": "^3.0.0",
     "rxjs": "^6.4.0",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
     "@ngtools/webpack": "^7.3.6",
+    "@types/core-js": "^2.5.0",
+    "@types/node": "^11.11.4",
+    "@types/webpack-env": "^1.13.9",
     "angular-router-loader": "^0.8.5",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^5.2.1",
-    "del-cli": "^1.1.0",
+    "css-loader": "^2.1.1",
+    "css-to-string-loader": "^0.1.3",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "lite-server": "^2.4.0",
     "raw-loader": "^2.0.0",
     "typescript": "^3.2.4",
     "webpack": "^4.29.6",
